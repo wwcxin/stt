@@ -96,6 +96,7 @@ Porcupine 模型配置
 [models.porcupine]
 language = "zh"
 path = "assets/models/porcupine_params_zh.pv"
+accessKey = ""
 ```
 
 ## 插件开发
