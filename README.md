@@ -143,7 +143,7 @@ async onUnload() {
 - `ctx.timestamp` - 获取时间戳
 
 ## 目录结构
-
+```
 stt/
 ├── assets/ # 资源文件
 │ ├── models/ # 模型文件
@@ -158,7 +158,7 @@ stt/
 │ └── utils/ # 工具函数
 ├── logs/ # 日志文件
 └── types/ # 第三方库类型定义
-
+```
 ## 常见问题
 
 1. WebSocket 连接失败
