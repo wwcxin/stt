@@ -1,7 +1,8 @@
-import { Porcupine, PorcupineError } from '@picovoice/porcupine-node';
+import { Porcupine } from '@picovoice/porcupine-node';
 import { HotwordConfig } from '../types';
 import * as fs from 'fs';
 import * as path from 'path';
+import { ConfigManager } from '../utils/config';
 
 export class HotwordDetector {
   private porcupine: Porcupine | null = null;
@@ -14,6 +15,8 @@ export class HotwordDetector {
   public async initialize(): Promise<void> {
     try {
       const modelPath = path.resolve(process.cwd(), this.config.modelPath);
+      const configManager = ConfigManager.getInstance();
+      const accessKey = configManager.getConfig().models.porcupine.accessKey;
       
       if (!fs.existsSync(modelPath)) {
         throw new Error(`找不到模型文件: ${modelPath}`);
@@ -36,7 +39,7 @@ export class HotwordDetector {
       console.log('使用模型文件:', modelPath);
       
       this.porcupine = new Porcupine(
-        'oUrzqSj688RjE5emQWgBa7z6foXSVYlZBsZk47gZJhdQ1yhyH5b1dQ==',
+        accessKey,
         keywordPaths,
         sensitivities,
         modelPath

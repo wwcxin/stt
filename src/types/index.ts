@@ -69,6 +69,7 @@ export interface Config {
     porcupine: {
       language: string;
       path: string;
+      accessKey: string;
     };
   };
   itn: boolean;

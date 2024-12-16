@@ -39,10 +39,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/speech-to-text.git"
+    "url": "git+https://github.com/wwcxin/speech-to-text.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/speech-to-text/issues"
+    "url": "https://github.com/wwcxin/speech-to-text/issues"
   },
-  "homepage": "https://github.com/yourusername/speech-to-text#readme"
+  "homepage": "https://github.com/wwcxin/speech-to-text#readme"
 }

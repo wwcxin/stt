@@ -36,26 +36,29 @@
 ## 安装
 
 1. 克隆仓库：
-git clone https://github.com/yourusername/stt.git
+
+```bash
+git clone https://github.com/wwcxin/stt.git
 cd stt
+```
 
 2. 安装依赖：
-bash
+
+```bash
 npm install
+```
 
-3. 创建必要的目录：
-bash
-mkdir -p assets/models/porcupine assets/keywords/zh logs
-
-4. 配置文件：
-- 复制 `config/asr.config.example.toml` 到 `config/asr.config.toml`
+3. 配置文件：
+- 配置accessKey `config/asr.config.toml`
 - 修改配置文件中的服务器地址和其他参数
 
 ## 使用方法
 
 1. 启动开发环境：
-bash
+
+```bash
 npm run dev
+```
 
 2. 可用命令：
 - `start` - 开始录音
@@ -66,7 +69,7 @@ npm run dev
 
 ## 配置文件说明
 
-toml
+```toml
 plugins = [ "关键词" ] # 启用的插件列表
 mode = "2pass" # 识别模式：2pass/online/offline
 itn = true # 是否启用逆文本标准化
@@ -93,12 +96,13 @@ Porcupine 模型配置
 [models.porcupine]
 language = "zh"
 path = "assets/models/porcupine_params_zh.pv"
+```
 
 ## 插件开发
 
 ### 插件结构
 
-typescript
+```typescript
 import { Plugin, RecognitionEvent } from '../../types';
 import { Context } from '../../core/context';
 export default {
@@ -127,6 +131,7 @@ async onUnload() {
 // 插件卸载时执行
 }
 } as Plugin;
+```
 
 ### ctx API
 - `ctx.text` - 获取完整识别文本
@@ -166,6 +171,7 @@ stt/
    - 调整灵敏度参数
 
 3. 音频录制问题
+   - 检查`sox`版本是否为`14.4.1`
    - 检查麦克风权限
    - 确认音频设备正常工作
    - 验证音频参数配置
