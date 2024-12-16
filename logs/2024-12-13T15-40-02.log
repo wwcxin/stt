@@ -1,0 +1,30 @@
+[2024-12-13T15:40:02.800Z] ERROR: Porcupine 初始化失败: PorcupineInvalidArgumentError: Porcupine failed to initialize: 
+  [0] Keyword file (.ppn) and model file (.pv) should belong to the same language. File belongs to `zh` while model file (.pv) belongs to `en`.
+    at pvStatusToException (D:\Documents\stt\node_modules\@picovoice\porcupine-node\src\errors.ts:68:13)
+    at Porcupine.handlePvStatus (D:\Documents\stt\node_modules\@picovoice\porcupine-node\src\porcupine.ts:259:26)
+    at new Porcupine (D:\Documents\stt\node_modules\@picovoice\porcupine-node\src\porcupine.ts:154:12)
+    at KeywordPlugin.onLoad (D:\Documents\stt\plugins\关键词\index.ts:24:24)
+    at PluginLoader.loadPlugin (D:\Documents\stt\src\core\plugin-loader.ts:34:22)
+    at PluginLoader.loadPlugins (D:\Documents\stt\src\core\plugin-loader.ts:14:18)
+    at VoiceRecognitionFramework.initialize (D:\Documents\stt\src\core\framework.ts:18:29)
+    at main (D:\Documents\stt\src\index.ts:14:19)
+    at Object.<anonymous> (D:\Documents\stt\src\index.ts:48:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  _message: 'Porcupine failed to initialize',
+  _messageStack: [
+    'Keyword file (.ppn) and model file (.pv) should belong to the same language. File belongs to `zh` while model file (.pv) belongs to `en`.'
+  ]
+}
+[2024-12-13T15:40:02.810Z] INFO: 插件 关键词 加载成功
+[2024-12-13T15:40:02.811Z] INFO: 输入命令控制录音：
+[2024-12-13T15:40:02.811Z] INFO: start   - 开始录音
+[2024-12-13T15:40:02.811Z] INFO: stop    - 停止录音
+[2024-12-13T15:40:02.811Z] INFO: reload  - 重新加载插件
+[2024-12-13T15:40:02.811Z] INFO: results - 显示所有结果
+[2024-12-13T15:40:02.811Z] INFO: exit    - 退出程序
+[2024-12-13T15:40:02.814Z] INFO: WebSocket 连接已建立
+[2024-12-13T15:40:16.719Z] INFO: 开始录音...
+[2024-12-13T15:40:19.684Z] INFO: 识别文本: 什么
+[2024-12-13T15:40:22.489Z] INFO: 识别文本: 石膏
+[2024-12-13T15:40:25.507Z] INFO: 识别文本: 雪豹
+[2024-12-13T15:40:25.507Z] INFO: [文本匹配] 检测到关键词: 雪豹

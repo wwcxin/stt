@@ -1,0 +1,53 @@
+[2024-12-13T15:34:33.480Z] ERROR: Porcupine 初始化失败: PorcupineInvalidArgumentError: File not found at 'modelPath': [object Object]
+    at new Porcupine (D:\Documents\stt\node_modules\@picovoice\porcupine-node\src\porcupine.ts:117:13)
+    at KeywordPlugin.onLoad (D:\Documents\stt\plugins\关键词\index.ts:37:24)
+    at PluginLoader.loadPlugin (D:\Documents\stt\src\core\plugin-loader.ts:34:22)
+    at PluginLoader.loadPlugins (D:\Documents\stt\src\core\plugin-loader.ts:14:18)
+    at VoiceRecognitionFramework.initialize (D:\Documents\stt\src\core\framework.ts:18:29)
+    at main (D:\Documents\stt\src\index.ts:14:19)
+    at Object.<anonymous> (D:\Documents\stt\src\index.ts:48:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module.m._compile (D:\Documents\stt\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10) {
+  _message: "File not found at 'modelPath': [object Object]",
+  _messageStack: []
+}
+[2024-12-13T15:34:33.492Z] INFO: 插件 关键词 加载成功
+[2024-12-13T15:34:33.493Z] INFO: 输入命令控制录音：
+[2024-12-13T15:34:33.493Z] INFO: start   - 开始录音
+[2024-12-13T15:34:33.493Z] INFO: stop    - 停止录音
+[2024-12-13T15:34:33.493Z] INFO: reload  - 重新加载插件
+[2024-12-13T15:34:33.493Z] INFO: results - 显示所有结果
+[2024-12-13T15:34:33.493Z] INFO: exit    - 退出程序
+[2024-12-13T15:34:33.496Z] INFO: WebSocket 连接已建立
+[2024-12-13T15:35:14.313Z] INFO: 检测到插件 关键词 变更，正在重新加载...
+[2024-12-13T15:35:14.314Z] INFO: 关键词插件已卸载
+[2024-12-13T15:35:14.376Z] ERROR: Porcupine 初始化失败: PorcupineInvalidArgumentError: Porcupine failed to initialize: 
+  [0] Keyword file (.ppn) and model file (.pv) should belong to the same language. File belongs to `zh` while model file (.pv) belongs to `en`.
+    at pvStatusToException (D:\Documents\stt\node_modules\@picovoice\porcupine-node\src\errors.ts:68:13)
+    at Porcupine.handlePvStatus (D:\Documents\stt\node_modules\@picovoice\porcupine-node\src\porcupine.ts:259:26)
+    at new Porcupine (D:\Documents\stt\node_modules\@picovoice\porcupine-node\src\porcupine.ts:154:12)
+    at KeywordPlugin.onLoad (D:\Documents\stt\plugins\关键词\index.ts:31:8)
+    at PluginLoader.loadPlugin (D:\Documents\stt\src\core\plugin-loader.ts:34:22)
+    at PluginLoader.reloadPlugin (D:\Documents\stt\src\core\plugin-loader.ts:69:16)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async FSWatcher.<anonymous> (D:\Documents\stt\src\core\plugin-loader.ts:56:9) {
+  _message: 'Porcupine failed to initialize',
+  _messageStack: [
+    'Keyword file (.ppn) and model file (.pv) should belong to the same language. File belongs to `zh` while model file (.pv) belongs to `en`.'
+  ]
+}
+[2024-12-13T15:35:14.379Z] INFO: 插件 关键词 加载成功
+[2024-12-13T15:35:22.799Z] INFO: 开始录音...
+[2024-12-13T15:35:26.828Z] INFO: 识别文本: 喂喂喂
+[2024-12-13T15:35:29.944Z] INFO: 识别文本: ， hellohello
+[2024-12-13T15:35:32.898Z] INFO: 识别文本: 豹
+[2024-12-13T15:35:36.582Z] INFO: 识别文本: ，雪豹
+[2024-12-13T15:35:36.582Z] INFO: [文本匹配] 检测到关键词: 雪豹
+[2024-12-13T15:35:47.365Z] INFO: 识别文本: 雪豹雪豹
+[2024-12-13T15:35:47.365Z] INFO: [文本匹配] 检测到关键词: 雪豹
+[2024-12-13T15:36:10.281Z] INFO: 识别文本: 雪豹
+[2024-12-13T15:36:10.282Z] INFO: [文本匹配] 检测到关键词: 雪豹
+[2024-12-13T15:36:13.325Z] INFO: 识别文本: ，师傅
+[2024-12-13T15:36:18.212Z] INFO: 识别文本: 雪豹
+[2024-12-13T15:36:18.212Z] INFO: [文本匹配] 检测到关键词: 雪豹

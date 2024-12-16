@@ -1,0 +1,28 @@
+plugins = [ "关键词" ]
+mode = "2pass"
+itn = true
+
+# FunASR 的热词配置
+[hotwords]
+"雪豹" = { score = 20 }
+"hello world" = { score = 40 }
+
+# Porcupine 的热词配置
+[porcupineHotwords]
+snowleopard = { path = "assets/keywords/zh/雪豹.ppn", sensitivity = 0.5 }
+
+[server]
+host = "192.168.10.102"
+port = 10095
+
+[audio]
+sampleRate = 16000
+channels = 1
+bitDepth = 16
+frameLength = 512
+chunkSize = [5, 10, 5]  # 600ms音频，前看300ms，后看300ms
+chunkInterval = 10
+
+[models.porcupine]
+language = "zh"
+path = "assets/models/porcupine_params_zh.pv"

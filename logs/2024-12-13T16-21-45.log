@@ -1,0 +1,56 @@
+[2024-12-13T16:21:45.908Z] INFO: 使用服务器地址: ws://192.168.10.102:10095
+[2024-12-13T16:21:45.909Z] INFO: 正在连接到服务器: ws://192.168.10.102:10095
+[2024-12-13T16:21:45.989Z] INFO: 正在加载关键词插件...
+[2024-12-13T16:21:45.989Z] INFO: 当前目录: D:\Documents\stt\plugins\关键词
+[2024-12-13T16:21:45.989Z] INFO: 关键词文件: D:\Documents\stt\plugins\关键词\雪豹.ppn
+[2024-12-13T16:21:45.989Z] INFO: 模型文件: D:\Documents\stt\plugins\关键词\porcupine_params_zh.pv
+[2024-12-13T16:21:45.990Z] ERROR: Porcupine 初始化失败: PorcupineInvalidArgumentError: File not found at 'modelPath': [object Object]
+    at new Porcupine (D:\Documents\stt\node_modules\@picovoice\porcupine-node\src\porcupine.ts:117:13)
+    at Object.onLoad (D:\Documents\stt\plugins\关键词\index.ts:89:32)
+    at PluginSystem.loadPlugin (D:\Documents\stt\src\core\plugin-system.ts:10:22)
+    at VoiceRecognitionFramework.loadPlugins (D:\Documents\stt\src\core\framework.ts:32:33)
+    at VoiceRecognitionFramework.initialize (D:\Documents\stt\src\core\framework.ts:23:16)
+    at main (D:\Documents\stt\src\index.ts:14:19)
+    at Object.<anonymous> (D:\Documents\stt\src\index.ts:48:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module.m._compile (D:\Documents\stt\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10) {
+  _message: "File not found at 'modelPath': [object Object]",
+  _messageStack: []
+}
+[2024-12-13T16:21:46.000Z] ERROR: 错误详情: {
+  message: "File not found at 'modelPath': [object Object]",
+  stack: "Error: File not found at 'modelPath': [object Object]\n" +
+    '    at new Porcupine (D:\\Documents\\stt\\node_modules\\@picovoice\\porcupine-node\\src\\porcupine.ts:117:13)\n' +
+    '    at Object.onLoad (D:\\Documents\\stt\\plugins\\关键词\\index.ts:89:32)\n' +
+    '    at PluginSystem.loadPlugin (D:\\Documents\\stt\\src\\core\\plugin-system.ts:10:22)\n' +
+    '    at VoiceRecognitionFramework.loadPlugins (D:\\Documents\\stt\\src\\core\\framework.ts:32:33)\n' +
+    '    at VoiceRecognitionFramework.initialize (D:\\Documents\\stt\\src\\core\\framework.ts:23:16)\n' +
+    '    at main (D:\\Documents\\stt\\src\\index.ts:14:19)\n' +
+    '    at Object.<anonymous> (D:\\Documents\\stt\\src\\index.ts:48:1)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module.m._compile (D:\\Documents\\stt\\node_modules\\ts-node\\src\\index.ts:1618:23)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)',
+  modelPath: 'D:\\Documents\\stt\\plugins\\关键词\\porcupine_params_zh.pv'
+}
+[2024-12-13T16:21:46.004Z] ERROR: 插件 关键词 加载失败: PorcupineInvalidArgumentError: File not found at 'modelPath': [object Object]
+    at new Porcupine (D:\Documents\stt\node_modules\@picovoice\porcupine-node\src\porcupine.ts:117:13)
+    at Object.onLoad (D:\Documents\stt\plugins\关键词\index.ts:89:32)
+    at PluginSystem.loadPlugin (D:\Documents\stt\src\core\plugin-system.ts:10:22)
+    at VoiceRecognitionFramework.loadPlugins (D:\Documents\stt\src\core\framework.ts:32:33)
+    at VoiceRecognitionFramework.initialize (D:\Documents\stt\src\core\framework.ts:23:16)
+    at main (D:\Documents\stt\src\index.ts:14:19)
+    at Object.<anonymous> (D:\Documents\stt\src\index.ts:48:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module.m._compile (D:\Documents\stt\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10) {
+  _message: "File not found at 'modelPath': [object Object]",
+  _messageStack: []
+}
+[2024-12-13T16:21:46.006Z] INFO: 输入命令控制录音：
+[2024-12-13T16:21:46.006Z] INFO: start   - 开始录音
+[2024-12-13T16:21:46.006Z] INFO: stop    - 停止录音
+[2024-12-13T16:21:46.006Z] INFO: reload  - 重新加载插件
+[2024-12-13T16:21:46.006Z] INFO: results - 显示所有结果
+[2024-12-13T16:21:46.006Z] INFO: exit    - 退出程序
+[2024-12-13T16:21:46.009Z] INFO: WebSocket 连接已建立

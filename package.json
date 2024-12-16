@@ -1,0 +1,48 @@
+{
+  "name": "@b23b23/speech-to-text",
+  "version": "1.0.0",
+  "description": "Speech to text demo with FunASR and Porcupine",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "speech-to-text",
+    "asr",
+    "funasr",
+    "porcupine",
+    "voice-recognition"
+  ],
+  "author": "xinc",
+  "license": "MIT",
+  "dependencies": {
+    "@iarna/toml": "^2.2.5",
+    "@picovoice/porcupine-node": "^3.0.4",
+    "node-record-lpcm16": "^1.0.1",
+    "ws": "^8.16.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "@types/ws": "^8.5.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "files": [
+    "dist",
+    "src",
+    "types",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/speech-to-text.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/speech-to-text/issues"
+  },
+  "homepage": "https://github.com/yourusername/speech-to-text#readme"
+}

@@ -1,0 +1,19 @@
+[2024-12-13T15:03:28.546Z] ERROR: 加载插件 关键词 失败: [96mplugins/关键词/index.ts[0m:[93m41[0m:[93m9[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ modelPath: string; built_in_keywords: never[]; custom_keywords: string[]; }' is not assignable to parameter of type 'string'.
+
+[7m 41[0m         {
+[7m   [0m [91m        ~[0m
+[7m 42[0m           modelPath: this.modelPath,
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m 44[0m           custom_keywords: ['雪豹']
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m 45[0m         }
+[7m   [0m [91m~~~~~~~~~[0m
+
+[2024-12-13T15:03:28.551Z] INFO: 输入命令控制录音：
+[2024-12-13T15:03:28.551Z] INFO: start   - 开始录音
+[2024-12-13T15:03:28.551Z] INFO: stop    - 停止录音
+[2024-12-13T15:03:28.552Z] INFO: reload  - 重新加载插件
+[2024-12-13T15:03:28.552Z] INFO: results - 显示所有结果
+[2024-12-13T15:03:28.552Z] INFO: exit    - 退出程序
+[2024-12-13T15:03:28.554Z] INFO: WebSocket 连接已建立

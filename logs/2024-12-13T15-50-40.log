@@ -1,0 +1,50 @@
+[2024-12-13T15:50:40.410Z] ERROR: Porcupine 初始化失败: PorcupineInvalidArgumentError: Porcupine failed to initialize: 
+  [0] Keyword file (.ppn) and model file (.pv) should belong to the same language. File belongs to `zh` while model file (.pv) belongs to `en`.
+    at pvStatusToException (D:\Documents\stt\node_modules\@picovoice\porcupine-node\src\errors.ts:68:13)
+    at Porcupine.handlePvStatus (D:\Documents\stt\node_modules\@picovoice\porcupine-node\src\porcupine.ts:259:26)
+    at new Porcupine (D:\Documents\stt\node_modules\@picovoice\porcupine-node\src\porcupine.ts:154:12)
+    at Object.onLoad (D:\Documents\stt\plugins\关键词\index.ts:75:32)
+    at PluginSystem.loadPlugin (D:\Documents\stt\src\core\plugin-system.ts:10:22)
+    at VoiceRecognitionFramework.loadPlugins (D:\Documents\stt\src\core\framework.ts:31:33)
+    at VoiceRecognitionFramework.initialize (D:\Documents\stt\src\core\framework.ts:22:16)
+    at main (D:\Documents\stt\src\index.ts:14:19)
+    at Object.<anonymous> (D:\Documents\stt\src\index.ts:48:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  _message: 'Porcupine failed to initialize',
+  _messageStack: [
+    'Keyword file (.ppn) and model file (.pv) should belong to the same language. File belongs to `zh` while model file (.pv) belongs to `en`.'
+  ]
+}
+[2024-12-13T15:50:40.419Z] INFO: 插件 关键词 加载成功
+[2024-12-13T15:50:40.419Z] INFO: 输入命令控制录音：
+[2024-12-13T15:50:40.419Z] INFO: start   - 开始录音
+[2024-12-13T15:50:40.419Z] INFO: stop    - 停止录音
+[2024-12-13T15:50:40.419Z] INFO: reload  - 重新加载插件
+[2024-12-13T15:50:40.420Z] INFO: results - 显示所有结果
+[2024-12-13T15:50:40.420Z] INFO: exit    - 退出程序
+[2024-12-13T15:50:40.422Z] ERROR: WebSocket 错误: AggregateError
+    at internalConnectMultiple (node:net:1118:18)
+    at afterConnectMultiple (node:net:1685:7) {
+  code: 'ECONNREFUSED',
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:8080
+        at createConnectionError (node:net:1648:14)
+        at afterConnectMultiple (node:net:1678:16) {
+      errno: -4078,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 8080
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:8080
+        at createConnectionError (node:net:1648:14)
+        at afterConnectMultiple (node:net:1678:16) {
+      errno: -4078,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 8080
+    }
+  ]
+}
+[2024-12-13T15:50:40.424Z] INFO: WebSocket 连接已关闭

@@ -1,0 +1,68 @@
+[2024-12-13T14:41:37.815Z] ERROR: 加载配置文件失败，使用默认配置: TomlError: Invalid character, expected "=" at row 2, col 7, pos 27:
+1: plugins = [ "关键词" ]
+2> "mode": "2pass",
+         ^
+3: "hotwords": "{\"雪豹\":20,\"hello world\":40}"
+
+
+    at TOMLParser.parseAssignEqual (D:\Documents\stt\node_modules\@iarna\toml\lib\toml-parser.js:369:26)
+    at TOMLParser.runOne (D:\Documents\stt\node_modules\@iarna\toml\lib\parser.js:64:30)
+    at TOMLParser.goto (D:\Documents\stt\node_modules\@iarna\toml\lib\parser.js:87:17)
+    at TOMLParser.parseAssignKeywordPreDot (D:\Documents\stt\node_modules\@iarna\toml\lib\toml-parser.js:356:21)
+    at TOMLParser.runOne (D:\Documents\stt\node_modules\@iarna\toml\lib\parser.js:64:30)
+    at TOMLParser.goto (D:\Documents\stt\node_modules\@iarna\toml\lib\parser.js:87:17)
+    at TOMLParser.recordAssignKeyword (D:\Documents\stt\node_modules\@iarna\toml\lib\toml-parser.js:350:19)
+    at TOMLParser.runOne (D:\Documents\stt\node_modules\@iarna\toml\lib\parser.js:64:30)
+    at TOMLParser.parse (D:\Documents\stt\node_modules\@iarna\toml\lib\parser.js:45:22)
+    at Object.parseString (D:\Documents\stt\node_modules\@iarna\toml\parse-string.js:13:12) {
+  fromTOML: true,
+  wrapped: null,
+  line: 1,
+  col: 6,
+  pos: 27
+}
+[2024-12-13T14:41:37.880Z] INFO: 插件 关键词 加载成功
+[2024-12-13T14:41:37.882Z] INFO: 输入命令控制录音：
+[2024-12-13T14:41:37.882Z] INFO: start   - 开始录音
+[2024-12-13T14:41:37.883Z] INFO: stop    - 停止录音
+[2024-12-13T14:41:37.883Z] INFO: reload  - 重新加载插件
+[2024-12-13T14:41:37.883Z] INFO: results - 显示所有结果
+[2024-12-13T14:41:37.883Z] INFO: exit    - 退出程序
+[2024-12-13T14:41:37.886Z] INFO: WebSocket 连接已建立
+[2024-12-13T14:41:42.465Z] INFO: 开始录音...
+[2024-12-13T14:41:46.519Z] ERROR: 插件 KeywordPlugin 处理事件失败: TypeError: plugin.handle is not a function
+    at PluginLoader.handleEvent (D:\Documents\stt\src\core\plugin-loader.ts:69:22)
+    at VoiceRecognition.<anonymous> (D:\Documents\stt\src\core\framework.ts:26:33)
+    at VoiceRecognition.emit (node:events:519:28)
+    at VoiceRecognition.emit (node:domain:488:12)
+    at VoiceRecognition.handleRecognitionResult (D:\Documents\stt\src\core\voice-recognition.ts:56:12)
+    at WebSocket.<anonymous> (D:\Documents\stt\src\core\voice-recognition.ts:38:14)
+    at WebSocket.emit (node:events:519:28)
+    at WebSocket.emit (node:domain:488:12)
+    at Receiver.receiverOnMessage (D:\Documents\stt\node_modules\ws\lib\websocket.js:1220:20)
+    at Receiver.emit (node:events:519:28)
+[2024-12-13T14:42:23.144Z] ERROR: 插件 KeywordPlugin 处理事件失败: TypeError: plugin.handle is not a function
+    at PluginLoader.handleEvent (D:\Documents\stt\src\core\plugin-loader.ts:69:22)
+    at VoiceRecognition.<anonymous> (D:\Documents\stt\src\core\framework.ts:26:33)
+    at VoiceRecognition.emit (node:events:519:28)
+    at VoiceRecognition.emit (node:domain:488:12)
+    at VoiceRecognition.handleRecognitionResult (D:\Documents\stt\src\core\voice-recognition.ts:56:12)
+    at WebSocket.<anonymous> (D:\Documents\stt\src\core\voice-recognition.ts:38:14)
+    at WebSocket.emit (node:events:519:28)
+    at WebSocket.emit (node:domain:488:12)
+    at Receiver.receiverOnMessage (D:\Documents\stt\node_modules\ws\lib\websocket.js:1220:20)
+    at Receiver.emit (node:events:519:28)
+[2024-12-13T14:42:26.753Z] ERROR: 插件 KeywordPlugin 处理事件失败: TypeError: plugin.handle is not a function
+    at PluginLoader.handleEvent (D:\Documents\stt\src\core\plugin-loader.ts:69:22)
+    at VoiceRecognition.<anonymous> (D:\Documents\stt\src\core\framework.ts:26:33)
+    at VoiceRecognition.emit (node:events:519:28)
+    at VoiceRecognition.emit (node:domain:488:12)
+    at VoiceRecognition.handleRecognitionResult (D:\Documents\stt\src\core\voice-recognition.ts:56:12)
+    at WebSocket.<anonymous> (D:\Documents\stt\src\core\voice-recognition.ts:38:14)
+    at WebSocket.emit (node:events:519:28)
+    at WebSocket.emit (node:domain:488:12)
+    at Receiver.receiverOnMessage (D:\Documents\stt\node_modules\ws\lib\websocket.js:1220:20)
+    at Receiver.emit (node:events:519:28)
+[2024-12-13T14:43:17.452Z] INFO: 检测到插件 关键词 变更，正在重新加载...
+[2024-12-13T14:43:17.505Z] INFO: 关键词插件已加载
+[2024-12-13T14:43:17.506Z] INFO: 插件 关键词 加载成功
